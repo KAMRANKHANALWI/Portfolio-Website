@@ -3,11 +3,12 @@
 :root {
     --primary-color: #fb7185;
     --dark-grey: #64748b;
+    --off-white: #f3f4f6;
 }
 
 body {
-    font-family: 'Montserrat', 
-    sans-serif;
+    font-family: 'Montserrat',
+        sans-serif;
 }
 
 hr {
@@ -102,5 +103,14 @@ hr {
     color: var(--primary-color);
 }
 
+.section {
+    padding: 2rem;
+}
 
+.section h1 {
+    text-align: center;
+}
 
+.ow {
+    background-color: var(--off-white);
+}
