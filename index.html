@@ -1,144 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
-
-    <link rel="stylesheet" href="style.css" />
+    <title>Home | Kamran Khan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Kamran's Component Library</h1>
-
-    <p>I am attending neog.camp and I want to make a library which would make all
-        my projects looks good and consistent.</p>
-
-    <hr>
-
-    <h2>@typography</h2>
-
-    <h1>This is the biggest heading</h1>
-    <h2>This is the second biggest heading</h2>
-    <p>Let me show you the normal text. This is free flowing and will wrap at the end
-        like a paragraph.</p>
-    <small>This is relatively smaller text</small>
-
-    <hr>
-    <h2>@container</h2>
-
-    <h3>fluid container</h3>
-    <div class="container">This is a fluid container and it will go till the end of the page</div>
-
-    <h3>center container</h3>
-    <div class="container container-center">This is a centered container and it will go till the specific width</div>
-
-    <hr>
-    <h2>@links</h2>
-
-    <a class="link link-primary" href="/">Primary Link</a>
-    <a class="link link-secondary" href="/">Secondary Link</a>
-
-    <hr>
-
-    <h2>@lists</h2>
-
-    <h3>unordered list</h3>
-
-    <p>This list will not have the bullet</p>
-    <ul class="list-non-bullet">
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ul>
-
-    <h3>unordered inline list</h3>
-
-    <ul class="list-non-bullet">
-        <li class="list-item-inline">Inline Item One</li>
-        <li class="list-item-inline">Inline Item Two</li>
-        <li class="list-item-inline">Inline Item Three</li>
-    </ul>
-
-    <h3>reverse ordered list</h3>
-
-    <ol reversed>
-        <li>milk</li>
-        <li>egg</li>
-        <li>break</li>
-    </ol>
-
-    <hr>
-
-    <h2>@nav</h2>
-
     <nav class="navigation container">
-        <div class="nav-brand">IAmBrand</div>
+        <div class="nav-brand">Kamran Khan Alwi</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
                 <a class="link link-active" href="/">Home</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">Products</a>
+                <a class="link" href="/projects.html">Projects</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">About</a>
+                <a class="link" href="/blogs.html">Blogs</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/books.html">Books</a>
             </li>
         </ul>
     </nav>
 
-    <hr>
-
-    <h2>@header</h2>
-
     <header class="hero">
-        <img class="hero-img" src="images/hero2.svg" />
+        <img class="hero-img" src="/images/hero2.svg" />
         <h1 class="hero-heading">Kamran Khan, the <b>Noob</b> <span class="heading-inverted">Web Developer</span> </h1>
     </header>
 
-    <hr>
-    <h2>@section</h2>
-    <p>A section is used to seperate parts of pages. In marketing websites you would
-        have seen a header followed by section of features, team, pricing, contact info, etc.
-    </p>
+    <section class="section ow">
+
+        <div class="container container-center">
+            <h1>technologies</h1>
+            <p>I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, Web Hosting.</p>
+        </div>
+        
+    </section>
 
     <section class="section">
-        <div class="container container-center">
-            <h1>white section</h1>
-            <p>It's a lot of work to create a professional website, so if you're new to web development, we encourage you to start small. You won't build another Facebook right away, but it's not hard to make your own simple website online, so we'll start there.
 
-            </p>
+        <div class="container container-center">
+            <h1>projects</h1>
+            <p>I like to showcase my work and thus, you can see my projects hosted online.</p>
+
+            <a class="link link-primary" href="/projects.html">See Projects</a>
+
         </div>
-       
+        
     </section>
 
     <section class="section ow">
 
         <div class="container container-center">
-            <h1>off-white section</h1>
-            <p>Before you start writing the code for your website, you should plan it first. What information are you showcasing? What fonts and colors are you using? Here we'll outline a simple method that you can follow to plan out your site's content and design.</p>
+            <h1>blogs</h1>
+            <p>I'm also working on some technical and non-technical blogs. I like to document my journey of learning.</p>
+            <a class="link link-secondary" href="/blogs.html">Read Blogs</a>
         </div>
         
     </section>
 
-    <hr>
+    <section class="section">
 
-    <h3>@footer</h3>
-    <footer>
-        <p>header inside footer</p>
+        <div class="container container-center">
+            <h1>books</h1>
+            <p>I like to read novels and non-fiction books in my free time. You can check out my reading lists!</p>
+            <a class="link link-primary" href="/books.html">See Lists</a>
+        </div>    
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer-header">social media presence</p>
         <div>
-            <ul>
-                <li>socialOne</li>
-                <li>socialTwo</li>
-                <li>socialThree</li>
+            <ul class="social-links list-non-bullet">
+                <li class="list-item-inline">
+                    <a class="link" href="https://github.com/KAMRANKHANALWI">
+                        github
+                    </a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="https://www.linkedin.com/in/kamrankhanalwi/">
+                        linkedin
+                    </a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="https://www.instagram.com/kamrankhanalwi/?hl=en">
+                        instagram
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
 
-
+    
 
 </body>
-
 </html>
