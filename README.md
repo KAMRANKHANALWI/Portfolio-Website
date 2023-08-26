@@ -2,5 +2,6 @@
 
 Hey! Welcome to my portfolio.
 
-It's coming up next week.
+Fell free to check out my site.
+I will be Happy if you connect!
 

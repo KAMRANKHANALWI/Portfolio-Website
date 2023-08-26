@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Qwitcher+Grypen:wght@700&family=Roboto+Mono&display=swap');
+/* for logo */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap');
+
+
 
 :root {
     --primary-color: #fb7185;
@@ -43,7 +46,6 @@ hr {
 }
 
 .link-book {
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Mono', monospace;    
     color: var(--purple);
 }
@@ -83,18 +85,27 @@ hr {
 .navigation {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    padding-right: 5rem;
     /* border-bottom-left-radius: 1rem; */
+    font-size: medium;
 
 }
 
-.navigation .nav-brand {
+/* .nav-item {
+    padding-right: 50px;
+} */
+
+.navigation .logo {
+    margin-right: auto;
     font-weight: bold;
-}
+} 
 
 .navigation .nav-pills {
-    text-align: right;
-}
+    list-style: none;
+    display: flex;
+    font-size: medium;
+    }
 
 .navigation .link {
     color: white;
