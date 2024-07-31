@@ -1,106 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Kamran Khan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-    <nav class="navigation container">
-        <ul class="nav-pills">
-            <li class="logo">Kamran Khan Alwi</li>
-            <li class="nav-items">
-                <a class="link link-active" href="/">Home</a>
-            </li>
-            <li class="nav-items">
-                <a class="link" href="/projects.html">Projects</a>
-            </li>
-            <li class="nav-items">
-                <a class="link" href="/blogs.html">Blogs</a>
-            </li>
-            <li class="nav-items">
-                <a class="link" href="/books.html">Books</a>
-            </li>
-        </ul>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="logo">Kamran Khan Alwi</div>
+      <button class="hamburger" aria-label="Toggle navigation">
+        &#9776;
+        <!-- This is a simple hamburger icon (three horizontal lines) -->
+      </button>
+      <ul class="nav-pills">
+        <li class="nav-items">
+          <a class="link link-active" href="/">Home</a>
+        </li>
+        <li class="nav-items">
+          <a class="link" href="/projects.html">Projects</a>
+        </li>
+        <li class="nav-items">
+          <a class="link" href="/blogs.html">Blogs</a>
+        </li>
+        <li class="nav-items">
+          <a class="link" href="/books.html">Books</a>
+        </li>
+      </ul>
     </nav>
 
-    <header class="hero">
-        <img class="hero-img" src="/images/hero2.svg" />
-        <h1 class="hero-heading">Kamran Khan, the <span class="heading-inverted">Web Developer</span> </h1>
-    </header>
+    <!-- <header class="hero">
+      <img class="hero-img" src="/images/kamran.png" />
+      <h1 class="hero-heading">
+        Hi, I’m Kamran, Web Designer and Web Developer
+      </h1>
+      <p class="">I design and build beautiful websites for businesses around the globe. If you need a modern and powerful website, send me an email. If we are a good fit, I will give you a time and cost estimate.</p>
+    </header> -->
+
+    <div class="hero">
+        <div class="container container-center">
+            <!-- <h1 class="title">Hi, I’m Kamran, Web Designer and Web Developer</h1> -->
+            <div class="bio">
+              <div class="bio-image">
+                <img src="/images/cat.png" alt="Kamran Khan" />
+              </div>
+              <div class="bio-text" style="font-size: larger; margin-left: 1rem;">
+                <p>
+                  <span class="emoji">🎨</span>
+                  <strong class="hero-heading"
+                    >Hello! I'm Kamran, a web designer & developer based in New
+                    Delhi.</strong
+                  >
+                  <br />
+                  <br />
+                  I design and build beautiful websites for businesses around the
+                  globe. If you need a modern and powerful website, send me an email.
+                  If we are a good fit, I will give you a time and cost estimate.
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <section class="section">
+      <div class="container container-center">
+        <h1>technologies</h1>
+        <p>
+          I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, Web
+          Hosting.
+        </p>
+      </div>
+    </section>
 
     <section class="section ow">
+      <div class="container container-center">
+        <h1>projects</h1>
+        <p>
+          I like to showcase my work and thus, you can see my projects hosted
+          online.
+        </p>
 
-        <div class="container container-center">
-            <h1>technologies</h1>
-            <p>I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, Web Hosting.</p>
-        </div>
-        
+        <a class="link link-primary" href="/projects.html">See Projects</a>
+      </div>
     </section>
 
     <section class="section">
-
-        <div class="container container-center">
-            <h1>projects</h1>
-            <p>I like to showcase my work and thus, you can see my projects hosted online.</p>
-
-            <a class="link link-primary" href="/projects.html">See Projects</a>
-
-        </div>
-        
+      <div class="container container-center">
+        <h1>blogs</h1>
+        <p>
+          I'm also working on some technical and non-technical blogs. I like to
+          document my journey of learning.
+        </p>
+        <a class="link link-secondary" href="/blogs.html">Read Blogs</a>
+      </div>
     </section>
 
     <section class="section ow">
-
-        <div class="container container-center">
-            <h1>blogs</h1>
-            <p>I'm also working on some technical and non-technical blogs. I like to document my journey of learning.</p>
-            <a class="link link-secondary" href="/blogs.html">Read Blogs</a>
-        </div>
-        
+      <div class="container container-center">
+        <h1>books</h1>
+        <p>
+          I like to read novels and non-fiction books in my free time. You can
+          check out my reading lists!
+        </p>
+        <a class="link link-primary" href="/books.html">See Lists</a>
+      </div>
     </section>
 
     <section class="section">
-
         <div class="container container-center">
-            <h1>books</h1>
-            <p>I like to read novels and non-fiction books in my free time. You can check out my reading lists!</p>
-            <a class="link link-primary" href="/books.html">See Lists</a>
-        </div>    
-
-    </section>
+          <h1>travel</h1>
+          <p>
+            I love to travel and explore. Check out for current updates !!
+          </p>
+          <a class="link link-secondary" href="/books.html">See Lists</a>
+        </div>
+      </section>
 
     <footer class="footer">
-        <p class="footer-header">social media presence</p>
-        <div>
-            <ul class="list-non-bullet">
-                <li class="list-item-inline">
-                    <a class="social-icon link" href="https://github.com/KAMRANKHANALWI" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="social-icon link" href="https://www.linkedin.com/in/kamrankhanalwi/" target="_blank">
-                        <ion-icon name="logo-linkedin">linkedin</ion-icon>
-                        
-                    </a>
-                </li>
+      <p class="footer-header">social media presence</p>
+      <div>
+        <ul class="list-non-bullet">
+          <li class="list-item-inline">
+            <a
+              class="social-icon link"
+              href="https://github.com/KAMRANKHANALWI"
+              target="_blank"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="list-item-inline">
+            <a
+              class="social-icon link"
+              href="https://www.linkedin.com/in/kamrankhanalwi/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin">linkedin</ion-icon>
+            </a>
+          </li>
 
-                <li class="list-item-inline">
-                    <a class="social-icon link" href="https://www.instagram.com/kamrankhanalwi/?hl=en" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-        </div>
+          <li class="list-item-inline">
+            <a
+              class="social-icon link"
+              href="https://www.instagram.com/kamrankhanalwi/?hl=en"
+              target="_blank"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        &copy; 2023 Kamran Khan Alwi
+      </div>
+      <div></div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navPills = document.querySelector(".nav-pills");
 
-    
-
-</body>
+        hamburger.addEventListener("click", () => {
+          navPills.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
 </html>
