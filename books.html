@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books | Kamran</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -39,125 +43,215 @@
       </ul>
     </nav>
 
-    <header class="container container-center bio">
-      <img class="hero-img" src="/images/sitting-reading.svg" />
-      <h1>
-        My Favourate <b>Books</b> <span class="heading-inverted">List: </span>
-      </h1>
+    <header
+      class="container mx-auto text-center bg-cover bg-center h-64"
+      style="background-image: url('/images/blueBook.jpg')"
+    >
+      <div
+        class="flex items-center justify-center h-full bg-white bg-opacity-60"
+      >
+        <h1 class="text-yellow-700 text-3xl tw md:text-5xl font-bold p-4 rounded">
+          My Favorite Books List
+        </h1>
+      </div>
     </header>
 
-    <ul class="list list-bullet">
-      <div class="align-book">
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive-ebook/dp/B019MMUA8S/ref=sr_1_1?crid=2OCI2C2J68Z27&keywords=the+subtle+art+of+not+giving+a+fu+k&qid=1687240397&s=digital-text&sprefix=the+subtle%2Cdigital-text%2C415&sr=1-1"
-            >The Subtle Art of Not Giving a F*ck</a
-          >by Mark Manson
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Tuesdays-Morrie-young-greatest-lesson/dp/0751527378"
-            >Tuesdays with Morrie</a
-          >by Mitch Albom
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.com/Am-Malala-Stood-Education-Taliban/dp/0316322423/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1687241437&sr=1-2"
-            >I Am Malala</a
-          >by Malala Yousafzai and Christina Lamb
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Reading-Lolita-Tehran-Memoir-Books/dp/0812979303"
-            >Reading Lolita in Tehran</a
-          >by Azar Nafisi
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Wild-Journey-Found-Cheryl-Strayed/dp/1782390626/ref=sr_1_1?keywords=wild+cheryl+strayed&qid=1687241632&s=books&sprefix=wild+cheryl+%2Cstripbooks%2C310&sr=1-1"
-            >Wild</a
-          >by Cheryl Strayed
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1?crid=29VTOX6B0HC6&keywords=atomic+habits&qid=1687241768&s=books&sprefix=Atomi%2Cstripbooks%2C347&sr=1-1"
-            >Atomic Habits</a
-          >by James Clear
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Good-They-Cant-Ignore-You/dp/0349420211/ref=sr_1_2?crid=BBYFZUAZU7TK&keywords=cal+newport+books&qid=1687241853&s=books&sprefix=cal+ne%2Cstripbooks%2C485&sr=1-2"
-            >So Good They Can't Ignore You</a
-          >by Cal Newport
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Against-Loveless-World-Susan-Abulhawa/dp/1982137037"
-            >Against the Loveless World</a
-          >by Susan Abulhawa
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Order-Live-Korean-Journey-Freedom/dp/0241973031"
-            >In Order to Live</a
-          >by Yeonmi Park and Maryanne Vollers
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Together-Tea-Marjan-Kamali/dp/0062236806"
-            >Together Tea</a
-          >by Marjan Kamali
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Greenlights-Raucous-stories-Academy-Award-winning/dp/1472280849"
-            >Greenlights</a
-          >by Matthew McConaughey
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Island-Missing-Trees-Elif-Shafak/dp/0241435005"
-            >The Island of Missing Trees</a
-          >by Elif Shafak
-        </li>
-
-        <li>
-          <a class="link link-book" href="/">It Ends with Us</a>by Colleen
-          Hoover
-        </li>
-
-        <li>
-          <a
-            class="link link-book"
-            href="https://www.amazon.in/Barking-Wrong-Tree-Surprising-Everything/dp/0062416049"
-            >Barking Up the Wrong Tree</a
-          >by Eric Barker
-        </li>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 m-12 mb-12"
+    >
+      <!-- Book Card -->
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://markmanson.net/wp-content/themes/mm-main/images/books-subtle-art.png"
+          alt="The Subtle Art of Not Giving a F*ck"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive-ebook/dp/B019MMUA8S/ref=sr_1_1?crid=2OCI2C2J68Z27&keywords=the+subtle+art+of+not+giving+a+fu+k&qid=1687240397&s=digital-text&sprefix=the+subtle%2Cdigital-text%2C415&sr=1-1"
+              class="hover:underline"
+              >The Subtle Art of Not Giving a F*ck</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by Mark Manson</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
       </div>
-    </ul>
+
+      <!-- Atomic Habit  -->
+
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://m.media-amazon.com/images/I/81+9Gbu0isL._SL1200_.jpg"
+          alt="Atomic Habits"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_1?crid=29VTOX6B0HC6&keywords=atomic+habits&qid=1687241768&s=books&sprefix=Atomi%2Cstripbooks%2C347&sr=1-1"
+              class="hover:underline"
+              >Atomic Habits</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by James Clear</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- More cards for other books -->
+
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://m.media-amazon.com/images/I/61fL8e5UymL._SL1200_.jpg"
+          alt="Reading Lolita in Tehran"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.in/Reading-Lolita-Tehran-Memoir-Books/dp/0812979303"
+              class="hover:underline"
+              >Reading Lolita in Tehran</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by Azar Nafisi</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://target.scene7.com/is/image/Target/GUEST_5b5b9ffe-c561-489d-9ebc-9bb8ac753c1b?wid=1200&hei=1200&qlt=80&fmt=webp"
+          alt="Wild"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.in/Wild-Journey-Found-Cheryl-Strayed/dp/1782390626/ref=sr_1_1?keywords=wild+cheryl+strayed&qid=1687241632&s=books&sprefix=wild+cheryl+%2Cstripbooks%2C310&sr=1-1"
+              class="hover:underline"
+              >Wild</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by Cheryl Strayed</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://m.media-amazon.com/images/I/619ZKDSCt1L._SL1500_.jpg"
+          alt="Tuesdays with Morrieby"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.in/Tuesdays-Morrie-young-greatest-lesson/dp/0751527378"
+              class="hover:underline"
+              >Tuesdays with Morrie</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by Mitch Albom</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://m.media-amazon.com/images/I/71hARztA+gL._SL1024_.jpg"
+          alt="Together Tea"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a href="" class="hover:underline">Together Tea</a>
+          </h2>
+          <p class="text-sm text-gray-600">by Marjan Kamali</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="/images/greenlights.jpg"
+          alt="GREENLIGHTS"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.in/Greenlights-Raucous-stories-Academy-Award-winning/dp/1472280849"
+              class="hover:underline"
+              >GREENLIGHTS</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by Matthew McConaughey</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Malala  -->
+
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://m.media-amazon.com/images/I/811pl5hIebL._SL1500_.jpg"
+          alt="I Am Malala"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.com/Am-Malala-Stood-Education-Taliban/dp/0316322423/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1687241437&sr=1-2"
+              class="hover:underline"
+              >I Am Malala</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by Malala Yousafzai</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Susan Abulhawa  -->
+      <div class="card bg-white shadow-md rounded-md overflow-hidden">
+        <img
+          src="https://rezised-images.knhbt.cz/1320x1320/25508744.webp"
+          alt="Against the Loveless World"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">
+            <a
+              href="https://www.amazon.in/Against-Loveless-World-Susan-Abulhawa/dp/1982137037"
+              class="hover:underline"
+              >Against the Loveless World</a
+            >
+          </h2>
+          <p class="text-sm text-gray-600">by Susan Abulhawa</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <p class="footer-header">social media presence</p>
@@ -192,7 +286,9 @@
             </a>
           </li>
         </ul>
+        &copy; 2023 Kamran Khan Alwi
       </div>
+      <div></div>
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
